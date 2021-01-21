@@ -1,0 +1,18 @@
+
+:root {
+  --body: white;
+  --text: black;
+  --off-body: #f7fafc;
+  --border: #eeeff0;
+}
+
+body {
+  background: var(--body);
+  color: var(--text);
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
