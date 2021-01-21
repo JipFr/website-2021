@@ -1,9 +1,10 @@
 <template>
   <app-section>
     <container class="apply-layout">
-      <div v-if="currentPost" class="post-content">
+      <div v-if="currentPost" ref="div" class="post-content">
         <h1>{{ currentPost.title }}</h1>
         <nuxt-content :document="currentPost" />
+        {{ setParagraphs() }}
       </div>
     </container>
   </app-section>
@@ -21,19 +22,29 @@
 .post-content {
   width: 100%;
 
+  h1 {
+    text-align: center;
+  }
+
   h2 {
     font-size: 1.25rem;
     margin-bottom: 10px;
   }
-  p {
+  a {
+    color: var(--anchor);
+    text-decoration: none;
+  }
+  p.is-text {
     display: block;
-    margin: 20px 0;
+    margin: 20px auto;
+    max-width: 37rem;
   }
   img {
     width: 100%;
     border-radius: 6px;
     display: block;
     border: 1px solid var(--border);
+    background: var(--border);
   }
   img + img {
     margin-top: 20px;
@@ -66,6 +77,25 @@ export default {
       projects: [],
       currentPost: null,
     }
+  },
+  watch: {
+    currentPost() {
+      this.$nextTick(() => {
+        this.setParagraphs()
+      })
+    },
+  },
+  methods: {
+    setParagraphs() {
+      // Add "is-text" class to all paragraphs without an image
+      if (this.$el) {
+        this.$el.querySelectorAll('p').forEach((p) => {
+          if (!p.querySelector('img')) {
+            p.classList.add('is-text')
+          }
+        })
+      }
+    },
   },
 }
 </script>

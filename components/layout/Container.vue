@@ -8,6 +8,6 @@
 .container {
   width: calc(100% - 40px);
   max-width: 1280px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 </style>

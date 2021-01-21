@@ -1,13 +1,17 @@
 
 :root {
+  --theme: #457461;
   --body: white;
   --text: black;
   --off-body: #f7fafc;
   --border: #eeeff0;
+
+  --anchor: #218cbd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --theme: #8080c0;
     --body: #191919;
     --text: white;
     --off-body: black;
@@ -18,7 +22,7 @@
 body {
   background: var(--body);
   color: var(--text);
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Poppins;
 }
 
 *, *::before, *::after {

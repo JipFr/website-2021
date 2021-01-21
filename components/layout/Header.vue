@@ -1,18 +1,25 @@
 <template>
   <header>
     <container>
-      <h2>Jip Frijlink</h2>
+      <div class="name-wrapper">
+        <nuxt-link to="/"><h2>Jip Frijlink</h2></nuxt-link>
+      </div>
     </container>
   </header>
 </template>
 
 <style scoped>
 header {
-  padding: 50px 0;
-  background: var(--off-body);
+  padding: 10px 0;
+  background: var(--theme);
+  color: white;
 }
-h2 {
-  font-size: 2rem;
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.name-wrapper {
+  display: inline-block;
 }
 </style>
 
