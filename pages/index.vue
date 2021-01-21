@@ -1,11 +1,18 @@
 <template>
   <app-section>
     <container>
-      <h2 class="text-2xl font-bold">Projects</h2>
+      <h2>Projects</h2>
       <project-list />
     </container>
   </app-section>
 </template>
+
+<style scoped>
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+</style>
 
 <script>
 // Import components

@@ -6,6 +6,15 @@
   --border: #eeeff0;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body: #191919;
+    --text: white;
+    --off-body: black;
+    --border: #4c4c4c;
+  }
+}
+
 body {
   background: var(--body);
   color: var(--text);
