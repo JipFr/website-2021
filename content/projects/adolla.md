@@ -2,6 +2,7 @@
 title: Adolla
 description: Adolla is an easy-to-use web app to read manga. It features progress, a customizable reader, backups, and more.
 color: '#4babce'
+date: 23 aug 2020
 ---
 
 Adolla is a web app I built to read manga. I was told there weren't any decent ones that worked for iOS, so I built it myself.
