@@ -2,6 +2,7 @@
 title: DesignCourse
 description: DesignCourse is a YouTube channel teach you how to get better at UI/UX. This platform was built for courses, to teach you how to even better.
 color: '#242B33'
+date: 03 nov 2020
 ---
 
 This is the front-end I built for DesignCourse. I was given a design by Gary Simon ([as seen on stream](https://www.youtube.com/watch?v=TEQjTVJLk2c)) and tasked to build it in Vue.js

@@ -7,6 +7,7 @@
       :style="`--shadow-color: ${project.color || 'inherit'}`"
     >
       <h3 class="project-title">{{ project.title }}</h3>
+      <p>{{ project.date }}</p>
       <p>{{ project.description }}</p>
     </box>
   </div>
@@ -40,7 +41,13 @@ export default {
     Box,
   },
   async fetch() {
-    this.projects = await this.$content('projects').fetch()
+    let projects = await this.$content('projects').fetch()
+
+    projects = projects.sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    )
+
+    this.projects = projects
   },
   data() {
     return {
