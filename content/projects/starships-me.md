@@ -13,7 +13,7 @@ I wanted to try out a new technology, so I thought I'd try out Sanity: it was a 
 
 The website is available at [starships.me](https://starships.me)
 
-![Starships home page](/assets/projects/starships.png)
-![Starships blog page: 'fleet design in modern sci-fi'](/assets/projects/starships-1.png)
-![Starships ships page](/assets/projects/starships-2.png)
-![Starships blog page on mobile](/assets/projects/starships-3.png)
+![Starships home page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/starships.png)
+![Starships blog page: 'fleet design in modern sci-fi'](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/starships-1.png)
+![Starships ships page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/starships-2.png)
+![Starships blog page on mobile](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/starships-3.png)

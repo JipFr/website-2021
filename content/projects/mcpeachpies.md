@@ -10,6 +10,6 @@ This is the website I built and designed for mcpeachpies. He told me some sectio
 
 The website is available on [mcpeachpies.com](https://mcpeachpies.com)
 
-![The home page](/assets/projects/mcpeachpies-1.png)
-![Datapack page](/assets/projects/mcpeachpies-2.png)
-!["Skin viewer" tool](/assets/projects/mcpeachpies-3.png)
+![The home page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/mcpeachpies-1.png)
+![Datapack page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/mcpeachpies-2.png)
+!["Skin viewer" tool](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/mcpeachpies-3.png)

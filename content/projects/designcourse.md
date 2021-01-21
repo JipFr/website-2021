@@ -9,11 +9,11 @@ This is the front-end I built for DesignCourse. I was given a design by Gary Sim
 
 At the time of writing it hasn't been released, but you can sign up to be notified when it is [here](https://designcourse.com).
 
-![Home page listing modules, tests, and more](/assets/projects/designcourse.png)
-![Course view, listing each lesson in the course](/assets/projects/designcourse-1.png)
-![Challenge page with all views](/assets/projects/designcourse-2.png)
-![Tests page](/assets/projects/designcourse-3.png)
-![Video page](/assets/projects/designcourse-4.png)
-![Log-in modal](/assets/projects/designcourse-5.png)
-![Plan selection modal](/assets/projects/designcourse-6.png)
-![Payment and account modal](/assets/projects/designcourse-7.png)
+![Home page listing modules, tests, and more](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse.png)
+![Course view, listing each lesson in the course](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-1.png)
+![Challenge page with all views](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-2.png)
+![Tests page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-3.png)
+![Video page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-4.png)
+![Log-in modal](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-5.png)
+![Plan selection modal](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-6.png)
+![Payment and account modal](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/designcourse-7.png)

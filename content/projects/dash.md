@@ -9,4 +9,4 @@ DASH is a Tweetdeck-like client I built for Makerlog. I wanted a place where you
 
 The project is available at [dash.jipfr.nl](https://dash.jipfr.nl)
 
-![Columns of tasks for many projects](/assets/projects/dash.png)
+![Columns of tasks for many projects](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/dash.png)

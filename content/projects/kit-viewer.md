@@ -11,6 +11,6 @@ This website allows you to view "kits" made by other players. For this I recreat
 
 To play on the server, join play.pvplegacy.net!
 
-![Arrow kit](/assets/projects/kitviewer.png)
-![Potion kit](/assets/projects/kitviewer-1.png)
-![Potion kit with hover](/assets/projects/kitviewer-2.png)
+![Arrow kit](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kitviewer.png)
+![Potion kit](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kitviewer-1.png)
+![Potion kit with hover](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kitviewer-2.png)

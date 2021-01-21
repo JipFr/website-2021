@@ -19,7 +19,7 @@ This project is built using Node.js, with MongoDB as a database. Express is used
 
 The project's source code is available on [GitHub](https://github.com/jipfr/colors-new), with a live version of the project at [kleurtj.es](https://kleurtj.es/jip)
 
-![Jip's dashboard](/assets/projects/kleurtjes.png)
-![Marijn's dashboard](/assets/projects/kleurtjes-3.png)
-![Jip's collections](/assets/projects/kleurtjes-1.png)
-![Collection for the "connect" website](/assets/projects/kleurtjes-2.png)
+![Jip's dashboard](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kleurtjes.png)
+![Marijn's dashboard](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kleurtjes-3.png)
+![Jip's collections](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kleurtjes-1.png)
+![Collection for the "connect" website](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/kleurtjes-2.png)

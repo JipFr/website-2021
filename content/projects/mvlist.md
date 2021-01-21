@@ -11,6 +11,6 @@ Apparently, letterboxHD wasn't good enough for me at the time. Awesome.
 
 The project is also available on [GitHub](https://github.com/jipfr/mvlist). Check out the live version at [mvlist.jipfr.nl](https://mvlist.jipfr.nl)
 
-![User's feed page](/assets/projects/mvlist.png)
-![User's watchlist](/assets/projects/mvlist-2.png)
-![Movie view](/assets/projects/mvlist-3.png)
+![User's feed page](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/mvlist.png)
+![User's watchlist](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/mvlist-2.png)
+![Movie view](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/mvlist-3.png)

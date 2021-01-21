@@ -9,4 +9,4 @@ Today is a client I built for Makerlog, a community you can use to easily keep t
 
 The project is available on [GitHub](https://github.com/jipfr/today). A live version is available at [today.jipfr.nl](https://today.jipfr.nl)
 
-![List view of recent tasks](/assets/projects/today.png)
+![List view of recent tasks](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/today.png)

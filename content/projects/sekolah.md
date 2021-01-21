@@ -9,5 +9,5 @@ When I heard my school was going to use an app for assignments and grades, I was
 
 It was never used for anyone except me, but I think it looks pretty good.
 
-![List view of schedules items](/assets/projects/sekolah.png)
-![List view of math grades](/assets/projects/sekolah-2.png)
+![List view of schedules items](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/sekolah.png)
+![List view of math grades](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/sekolah-2.png)
