@@ -1,19 +1,33 @@
 <template>
   <div class="list">
-    <box
+    <nuxt-link
       v-for="project in projects"
       :key="project.slug"
-      class="do-hover"
-      :style="`--shadow-color: ${project.color || 'inherit'}`"
+      :to="project.slug"
     >
-      <h3 class="project-title">{{ project.title }}</h3>
-      <p>{{ project.date }}</p>
-      <p>{{ project.description }}</p>
-    </box>
+      <box
+        class="do-hover"
+        :style="`--shadow-color: ${project.color || 'inherit'}`"
+      >
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p>{{ project.date }}</p>
+        <p>{{ project.description }}</p>
+      </box>
+    </nuxt-link>
   </div>
 </template>
 
 <style lang="scss" scoped>
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+
+  > * {
+    height: 100%;
+  }
+}
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
