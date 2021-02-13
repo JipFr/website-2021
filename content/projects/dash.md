@@ -9,6 +9,6 @@ icon-background: 'linear-gradient(to top right, #00B780, #0AD99A)'
 
 DASH is a Tweetdeck-like client I built for Makerlog. I wanted a place where you could quickly add tasks to projects and organise your todos. You can check Makerlog out [here](https://getmakerlog.com).
 
-The project is available at [dash.jipfr.nl](https://dash.jipfr.nl)
+The project is no longer functional due to changes in the API.
 
 ![Columns of tasks for many projects](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/dash.png)

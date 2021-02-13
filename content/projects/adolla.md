@@ -15,7 +15,6 @@ The project is made with Node on the back-end with Handlebars as the templating 
 
 The source code and instructions for getting the project up and running are available [here](https://github.com/JipFr/Adolla).
 
-![Alternative app icons on iOS](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/icons.jpg)
 ![Image of the home page](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/0.png)
 ![Lists page](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/1.png)
 ![Backups page](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/2.png)
@@ -28,3 +27,4 @@ The source code and instructions for getting the project up and running are avai
 ![Mobile, dark](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/mobile_1_dark.png)
 ![Mobile](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/mobile_2_light.png)
 ![Mobile, dark](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/mobile_2_dark.png)
+![Alternative app icons on iOS](https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/icons.jpg)

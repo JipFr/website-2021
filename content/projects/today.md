@@ -9,6 +9,6 @@ icon-background: '#00B77A'
 
 Today is a client I built for Makerlog, a community you can use to easily keep track of your todos, and view what you've done recently. You can check Makerlog out [here](https://getmakerlog.com).
 
-The project is available on [GitHub](https://github.com/jipfr/today). A live version is available at [today.jipfr.nl](https://today.jipfr.nl)
+The project is available on [GitHub](https://github.com/jipfr/today). The project is no longer functional due to changes in the API.
 
 ![List view of recent tasks](https://raw.githubusercontent.com/JipFr/jipfr/master/projects/today.png)

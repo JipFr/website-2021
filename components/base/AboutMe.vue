@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p>Coming soon?</p>
+    <h2 class="section-title">{{ about.title }}</h2>
+    <nuxt-content :document="about" />
   </div>
 </template>
 
@@ -9,3 +10,18 @@ p {
   color: var(--text-secondary);
 }
 </style>
+
+<script>
+export default {
+  async fetch() {
+    const about = await this.$content('about').fetch()
+    console.log(about)
+    this.about = about
+  },
+  data() {
+    return {
+      about: {},
+    }
+  },
+}
+</script>

@@ -8,7 +8,6 @@
 
       <!-- About me -->
       <app-section>
-        <h2>About me</h2>
         <about-me />
       </app-section>
 
@@ -22,7 +21,8 @@
 </template>
 
 <style scoped>
-h2 {
+h2,
+* >>> .section-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
