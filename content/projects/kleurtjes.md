@@ -5,6 +5,7 @@ color: '#3d6a7b'
 date: 24 may 2020
 icon: /assets/empty.png
 icon-background: '#3d6a7b'
+tech: Web, Node.js, MongoDB
 ---
 
 This project is a remake of an older site I built before. I was not satisfied with that site, since it had various UX issues, so I built this.

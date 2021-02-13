@@ -5,6 +5,7 @@ color: '#EC008C'
 date: 29 jul 2020
 icon: /assets/icons/heliumargon-logo.svg
 icon-background: 'linear-gradient(to right, #EC008C, #00AEEF)'
+tech: Web
 ---
 
 This is a website I built for HeliumArgon.

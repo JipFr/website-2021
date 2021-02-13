@@ -14,6 +14,13 @@
             <h3 class="project-title">{{ project.title }}</h3>
             <p class="date">{{ project.date }}</p>
             <p class="description">{{ project.description }}</p>
+            <p class="tech">
+              <tech-tag
+                v-for="tech in project.tech.split(', ')"
+                :key="tech"
+                :tech="tech"
+              />
+            </p>
           </div>
           <aside class="box-aside">
             <div
@@ -70,7 +77,8 @@ p.date,
 p.description {
   color: var(--text-secondary);
 }
-p.description {
+p.description,
+p.tech {
   margin-top: 10px;
   line-height: 1.5rem;
 }
@@ -116,10 +124,12 @@ p.description {
 <script>
 // Import components
 import Box from '~/components/layout/Box'
+import TechTag from '~/components/base/TechTag'
 
 export default {
   components: {
     Box,
+    TechTag,
   },
   async fetch() {
     let projects = await this.$content('projects').fetch()

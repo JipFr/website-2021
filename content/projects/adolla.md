@@ -5,6 +5,7 @@ color: '#4babce'
 date: 23 aug 2020
 icon: https://raw.githubusercontent.com/JipFr/Adolla/master/public/icon.png
 icon-background: 'linear-gradient(to top, #4babce, #6ebdda)'
+tech: Web, Node.js, TypeScript
 ---
 
 Adolla is a web app I built to read manga. I was told there weren't any decent ones that worked for iOS, so I built it myself.

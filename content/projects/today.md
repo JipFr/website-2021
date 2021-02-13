@@ -5,6 +5,7 @@ color: '#00B77A'
 date: 23 may 2019
 icon: /assets/icons/today-icon.png
 icon-background: '#00B77A'
+tech: Web
 ---
 
 Today is a client I built for Makerlog, a community you can use to easily keep track of your todos, and view what you've done recently. You can check Makerlog out [here](https://getmakerlog.com).

@@ -5,6 +5,7 @@ color: '#E3E3EC'
 date: 10 jan 2021
 icon: https://starships.me/icon.png
 icon-background: '#E3E3EC'
+tech: Vue, Nuxt, Sanity, SCSS
 ---
 
 Starships is a blog I built to try out new technologies. It's built with Nuxt/Vue and Sanity.

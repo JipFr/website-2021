@@ -5,6 +5,7 @@ color: '#445396'
 date: 05 jan 2019
 icon: /assets/icons/bsl-icon.png
 icon-background: 'linear-gradient(to top, #445396, #6F83DD)'
+tech: Web, Node.js
 ---
 
 BSL (or boodschappenlijst in Dutch, it's very creative) is a web app designed to be used in families. Used the synced list to easily put your wishes on the list, which can then be viewed by whoever is doing the shopping.

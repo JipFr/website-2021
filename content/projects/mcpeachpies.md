@@ -5,6 +5,7 @@ color: '#F39E71'
 date: 29 jul 2020
 icon: /assets/icons/peach-icon.png
 icon-background: 'url(/assets/projects/mcpeachpies-banner.jpg); background-size: cover; background-position: center'
+tech: Web, PHP
 ---
 
 

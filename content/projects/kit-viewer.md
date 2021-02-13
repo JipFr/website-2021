@@ -5,6 +5,7 @@ color: '#EFEFEF'
 date: 10 nov 2020
 icon: /assets/icons/kit-viewer-icon.png
 icon-background: '#efefef'
+tech: Web
 ---
 
 This is a web application I built for PvpLegacy, a Minecraft server where you combat other players.

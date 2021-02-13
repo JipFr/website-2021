@@ -4,7 +4,8 @@ description: mvlist provides an easy way to keep track and rate movies you love 
 color: '#d04040'
 date: 26 jun 2020
 icon: /assets/icons/mvlist-icon.png
-icon-background: '#d04040' 
+icon-background: '#d04040'
+tech: Web, Node.js
 ---
 
 When I built this, I wanted an easy way to keep track of movies I wanted to watch. This web app provides an easy way to do that, with a watchlist, a view where you can see what movies on your list are upcoming, you can keep track of "up next", and it also shows movies you've recently watched.
