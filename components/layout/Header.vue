@@ -32,3 +32,19 @@ export default {
   },
 }
 </script>
+
+<!--<template>
+  <header>
+    <container>
+      <div class="name-wrapper">
+        <h1>Jip Frijlink</h1>
+      </div>
+    </container>
+  </header>
+</template>
+
+<style lang="scss" scoped>
+header {
+  margin-top: 50px;
+}
+</style>-->

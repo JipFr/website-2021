@@ -1,9 +1,10 @@
-
 :root {
   --theme: #457461;
   --body: white;
-  --text: black;
-  --off-body: #f7fafc;
+  --text: #191919;
+  --text-secondary: #4c4c4c;
+  --content: #f8f9fa;
+  --content-highlight: #f5f7f9;
   --border: #eeeff0;
 
   --anchor: #218cbd;
@@ -12,9 +13,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --theme: #8080c0;
-    --body: #191919;
+    --body: #202328;
     --text: white;
-    --off-body: black;
+    --content: #1b1b1b;
     --border: #4c4c4c;
   }
 }
@@ -25,7 +26,9 @@ body {
   font-family: Poppins;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }

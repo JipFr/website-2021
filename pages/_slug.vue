@@ -1,6 +1,6 @@
 <template>
   <app-section>
-    <container class="apply-layout">
+    <container>
       <div v-if="currentPost" ref="div" class="post-content">
         <h1>{{ currentPost.title }}</h1>
         <nuxt-content :document="currentPost" />
