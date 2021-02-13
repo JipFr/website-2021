@@ -15,7 +15,6 @@ p {
 export default {
   async fetch() {
     const about = await this.$content('about').fetch()
-    console.log(about)
     this.about = about
   },
   data() {
