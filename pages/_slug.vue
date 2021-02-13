@@ -36,6 +36,9 @@
     margin: 20px auto;
     max-width: 37rem;
   }
+  p.is-text {
+    color: var(--text-secondary);
+  }
   img {
     width: 100%;
     border-radius: 6px;

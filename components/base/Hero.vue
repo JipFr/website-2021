@@ -11,13 +11,13 @@
 <style lang="scss" scoped>
 .hero {
   position: relative;
-  display: flex;
   overflow: hidden;
 
   .jip {
     width: 90%;
     max-width: 500px;
     border-radius: 10px;
+    display: block;
   }
 
   &::before {
