@@ -44,6 +44,11 @@
     color: #f03e2f;
     background: rgba(240, 63, 47, 0.1);
   }
+
+  &[data-tech='Tailwind'] {
+    color: #06b6d4;
+    background: rgba(6, 181, 212, 0.15);
+  }
 }
 </style>
 

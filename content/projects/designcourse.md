@@ -5,7 +5,7 @@ color: '#242B33'
 date: 03 nov 2020
 icon: '/assets/icons/designcourse-icon.svg'
 icon-background: '#2C2C2C'
-tech: Vue, Nuxt
+tech: Vue, Nuxt, Tailwind
 ---
 
 This is the front-end I built for DesignCourse. I was given a design by Gary Simon ([as seen on stream](https://www.youtube.com/watch?v=TEQjTVJLk2c)) and tasked to build it in Vue.js
