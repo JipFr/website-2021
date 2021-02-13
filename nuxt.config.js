@@ -4,11 +4,15 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'new-website',
+    title: 'Jip Frijlink',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: "Jip Frijlink's website",
+      },
     ],
     link: [
       {
@@ -18,7 +22,7 @@ export default {
       {
         href:
           'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap',
-        rel: 'stylesheets',
+        rel: 'stylesheet',
       },
       {
         rel: 'icon',
