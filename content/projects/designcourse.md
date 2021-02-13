@@ -1,6 +1,6 @@
 ---
 title: DesignCourse
-description: DesignCourse is a YouTube channel teach you how to get better at UI/UX. This platform was built for courses, to teach you how to even better.
+description: DesignCourse is a YouTube channel with tutorials on UI/UX. This platform was built for courses, to teach you how to become even better.
 color: '#242B33'
 date: 03 nov 2020
 icon: '/assets/icons/designcourse-icon.svg'

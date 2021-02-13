@@ -167,8 +167,6 @@ export default {
         headImg,
         -player.width / 2,
         -player.height / 2,
-        // 0,
-        // 0,
         player.width,
         player.height
       )
@@ -176,11 +174,13 @@ export default {
     },
     keydown(evt) {
       if (this.player) {
+        evt.preventDefault()
         this.keys[evt.key] = true
       }
     },
     keyup(evt) {
       if (this.player) {
+        evt.preventDefault()
         this.keys[evt.key] = false
       }
     },
