@@ -1,30 +1,49 @@
 <template>
   <app-section>
-    <container>
-      <!-- Hero -->
-      <app-section>
-        <hero />
-      </app-section>
+    <container class="do-layout">
+      <aside>
+        <!-- Hero -->
+        <div class="sect">
+          <hero />
+        </div>
+      </aside>
 
-      <!-- About me -->
-      <app-section>
-        <about-me />
-      </app-section>
+      <main>
+        <!-- About me -->
+        <div class="sect">
+          <about-me />
+        </div>
 
-      <!-- Projects -->
-      <app-section>
-        <h2>Projects</h2>
-        <project-list />
-      </app-section>
+        <!-- Projects -->
+        <div class="sect">
+          <h2>Projects</h2>
+          <project-list />
+        </div>
+      </main>
     </container>
   </app-section>
 </template>
 
 <style scoped>
+.do-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 20px;
+}
+.sect + .sect {
+  margin-top: 50px;
+}
+
 h2,
 * >>> .section-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .do-layout {
+    grid-template-columns: 100%;
+  }
 }
 </style>
 

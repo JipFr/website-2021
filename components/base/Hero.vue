@@ -12,11 +12,12 @@
 .hero {
   position: relative;
   display: flex;
-  justify-content: center;
+  overflow: hidden;
 
   .jip {
     width: 90%;
     max-width: 500px;
+    border-radius: 10px;
   }
 
   &::before {

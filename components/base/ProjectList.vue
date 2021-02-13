@@ -83,6 +83,10 @@ p.tech {
   line-height: 1.5rem;
 }
 
+p.tech {
+  margin-left: -3px;
+}
+
 .box-inner {
   display: grid;
   grid-template-columns: 1fr 100px;
@@ -108,7 +112,7 @@ p.tech {
   filter: saturate(0) brightness(1.5);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .list {
     grid-template-columns: 100%;
   }
@@ -116,6 +120,9 @@ p.tech {
     grid-template-columns: 100%;
   }
   .box-aside {
+    display: none;
+  }
+  .project-title::before {
     display: none;
   }
 }

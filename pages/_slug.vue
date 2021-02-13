@@ -22,10 +22,6 @@
 .post-content {
   width: 100%;
 
-  h1 {
-    text-align: center;
-  }
-
   h2 {
     font-size: 1.25rem;
     margin-bottom: 10px;
@@ -34,7 +30,8 @@
     color: var(--anchor);
     text-decoration: none;
   }
-  p.is-text {
+  p.is-text,
+  h1 {
     display: block;
     margin: 20px auto;
     max-width: 37rem;

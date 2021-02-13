@@ -4,10 +4,12 @@
 
 <style lang="scss" scoped>
 .tech-tag {
+  display: inline-block;
   padding: 3px 8px;
-  margin-right: 10px;
+  margin: 3px;
   border-radius: 4px;
   background: var(--body);
+  color: var(--text-secondary);
 
   &[data-tech='Web'] {
     color: #009688;
@@ -18,11 +20,6 @@
   &[data-tech='Nuxt'] {
     color: #42b983;
     background: rgba(66, 185, 131, 0.15);
-  }
-
-  &[data-tech='Node.js'] {
-    color: #026e00;
-    background: rgba(2, 110, 0, 0.15);
   }
 
   &[data-tech='SCSS'] {
@@ -48,6 +45,13 @@
   &[data-tech='Tailwind'] {
     color: #06b6d4;
     background: rgba(6, 181, 212, 0.15);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .tech-tag[data-tech='Node.js'] {
+    color: #026e00;
+    background: rgba(2, 110, 0, 0.15);
   }
 }
 </style>
