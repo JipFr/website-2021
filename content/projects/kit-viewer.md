@@ -3,6 +3,8 @@ title: PvpLegacy Kit viewer
 description: PvpLegacy is a Minecraft server where you fight other players. This website is used to view "kits" made by other players.
 color: '#EFEFEF'
 date: 10 nov 2020
+icon: /assets/icons/kit-viewer-icon.png
+icon-background: '#efefef'
 ---
 
 This is a web application I built for PvpLegacy, a Minecraft server where you combat other players.

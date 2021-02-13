@@ -15,12 +15,12 @@
             <p class="date">{{ project.date }}</p>
             <p class="description">{{ project.description }}</p>
           </div>
-          <aside>
-            <div class="icon-wrapper">
-              <img
-                src="https://raw.githubusercontent.com/JipFr/Adolla/master/public/icon.png"
-                alt
-              />
+          <aside class="box-aside">
+            <div
+              class="icon-wrapper"
+              :style="`background: ${project['icon-background']}`"
+            >
+              <img :src="project.icon" alt />
             </div>
           </aside>
         </div>
@@ -78,6 +78,7 @@ p.description {
 .box-inner {
   display: grid;
   grid-template-columns: 1fr 100px;
+  grid-gap: 30px;
 
   .icon-wrapper {
     padding: 10px;
@@ -89,12 +90,26 @@ p.description {
     align-items: center;
   }
   .icon-wrapper img {
-    width: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
   }
 }
 
 [href='/adolla'] .icon-wrapper img {
   filter: saturate(0) brightness(1.5);
+}
+
+@media (max-width: 800px) {
+  .list {
+    grid-template-columns: 100%;
+  }
+  .box-inner {
+    grid-template-columns: 100%;
+  }
+  .box-aside {
+    display: none;
+  }
 }
 </style>
 

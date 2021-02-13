@@ -3,6 +3,8 @@ title: HeliumArgon
 description: HeliumArgon is a company made to help businesses, communities, and people with tasks by creating products and services to help them.
 color: '#EC008C'
 date: 29 jul 2020
+icon: /assets/icons/heliumargon-logo.svg
+icon-background: 'linear-gradient(to right, #EC008C, #00AEEF)'
 ---
 
 This is a website I built for HeliumArgon.
