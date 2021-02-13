@@ -81,6 +81,8 @@ canvas {
 </style>
 
 <script>
+const headOffset = 0.1
+
 export default {
   data() {
     return {
@@ -108,7 +110,7 @@ export default {
         accel: 0.1,
         maxSpeed: 5,
         speed: 1,
-        rotation: -Math.PI / 2,
+        rotation: -Math.PI / 2 - headOffset,
       }
 
       requestAnimationFrame(() => {
@@ -121,16 +123,16 @@ export default {
       const player = this.player
 
       // Check controls
-      if (this.keys.a || this.keys.ArrowLeft) {
+      if (this.keys.a || this.keys.arrowleft) {
         player.rotation -= 0.02
       }
-      if (this.keys.d || this.keys.ArrowRight) {
+      if (this.keys.d || this.keys.arrowright) {
         player.rotation += 0.02
       }
-      if (this.keys.w || this.keys.ArrowUp) {
+      if (this.keys.w || this.keys.arrowup) {
         player.speed += player.accel
       }
-      if (this.keys.s || this.keys.ArrowDown) {
+      if (this.keys.s || this.keys.arrowdown) {
         player.speed -= player.accel
       }
 
@@ -162,7 +164,7 @@ export default {
       const headImg = this.$refs.head
       ctx.save()
       ctx.translate(player.x + player.width / 2, player.y + player.height / 2)
-      ctx.rotate(player.rotation + Math.PI / 2)
+      ctx.rotate(player.rotation + Math.PI / 2 + headOffset)
       ctx.drawImage(
         headImg,
         -player.width / 2,
@@ -174,14 +176,14 @@ export default {
     },
     keydown(evt) {
       if (this.player) {
-        evt.preventDefault()
-        this.keys[evt.key] = true
+        if (evt.key.includes('Arrow')) evt.preventDefault()
+        this.keys[evt.key.toLowerCase()] = true
       }
     },
     keyup(evt) {
       if (this.player) {
-        evt.preventDefault()
-        this.keys[evt.key] = false
+        if (evt.key.includes('Arrow')) evt.preventDefault()
+        this.keys[evt.key.toLowerCase()] = false
       }
     },
   },
