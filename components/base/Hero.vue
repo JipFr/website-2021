@@ -36,7 +36,7 @@ canvas {
     width: 110px;
     position: absolute;
     bottom: 41%;
-    left: 9%;
+    left: 28px;
     transform: scale(1);
     transition: bottom 200ms, transform 200ms;
 
