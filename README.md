@@ -1,4 +1,6 @@
-# new-website
+# Jip Frijlink
+
+My personal website
 
 ## Build Setup
 

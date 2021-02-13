@@ -6,6 +6,11 @@ export default {
   head: {
     title: 'Jip Frijlink',
     meta: [
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Jip Frijlink',
+      },
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
