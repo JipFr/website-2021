@@ -100,7 +100,6 @@ export default {
     activate() {
       const head = this.$refs.head
       const pos = head.getBoundingClientRect()
-      console.log(head)
       this.player = {
         x: pos.x,
         y: pos.y,
@@ -122,7 +121,6 @@ export default {
       const player = this.player
 
       // Check controls
-      console.log(this.keys.a)
       if (this.keys.a || this.keys.ArrowLeft) {
         player.rotation -= 0.02
       }
