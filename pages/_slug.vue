@@ -45,6 +45,7 @@
     display: block;
     border: 1px solid var(--border);
     background: var(--border);
+    min-height: 100px;
   }
   img + img {
     margin-top: 20px;

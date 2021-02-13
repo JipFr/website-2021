@@ -3,7 +3,7 @@ title: Kleurtj.es
 description: kleurtj.es is an easy to way store, share, and copy colors. It even has collaboration tools for sharing palettes!
 color: '#3d6a7b'
 date: 24 may 2020
-icon: /empty.png
+icon: /assets/empty.png
 icon-background: '#3d6a7b'
 ---
 
