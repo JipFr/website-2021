@@ -49,11 +49,6 @@ canvas {
     left: 148px;
     transform: scale(1);
     transition: transform 200ms;
-
-    &:hover {
-      // transform: scale(1.2);
-      // animation: spin 1s linear infinite;
-    }
   }
 
   .hidden {
@@ -166,18 +161,7 @@ export default {
           player.speed -= player.accel
         }
 
-        if (player.speed > player.maxSpeed) {
-          player.speed = player.maxSpeed
-        } else if (player.speed < -player.maxSpeed) {
-          player.speed = -player.maxSpeed
-        }
-
-        // Add speed
-        const addX = this.player.speed * Math.cos(this.player.rotation)
-        const addY = this.player.speed * Math.sin(this.player.rotation)
-
-        player.x += addX
-        player.y += addY
+        this.check(player)
       }
 
       const catPlayer = this.catPlayer
@@ -202,17 +186,42 @@ export default {
           catPlayer.speed = -catPlayer.maxSpeed
         }
 
-        // Add speed
-        const addX = this.catPlayer.speed * Math.cos(this.catPlayer.rotation)
-        const addY = this.catPlayer.speed * Math.sin(this.catPlayer.rotation)
-
-        catPlayer.x += addX
-        catPlayer.y += addY
+        this.check(catPlayer)
       }
 
       this.draw()
 
       requestAnimationFrame(this.update)
+    },
+    check(entity) {
+      if (entity.speed > entity.maxSpeed) {
+        entity.speed = entity.maxSpeed
+      } else if (entity.speed < -entity.maxSpeed) {
+        entity.speed = -entity.maxSpeed
+      }
+
+      // Add speed
+      const addX = entity.speed * Math.cos(entity.rotation)
+      const addY = entity.speed * Math.sin(entity.rotation)
+
+      entity.x += addX
+      entity.y += addY
+
+      // Don't allow going past the edge
+      const canvas = this.$refs.canvas
+      if (entity.x - (entity.width + entity.height) > canvas.scrollWidth) {
+        entity.x = -entity.width * 2
+      }
+      if (entity.x + (entity.width + entity.height) < 0) {
+        entity.x = canvas.width + entity.width * 2
+      }
+
+      if (entity.y - (entity.width + entity.height) > canvas.scrollHeight) {
+        entity.y = -entity.height * 2
+      }
+      if (entity.y + (entity.width + entity.height * 2) < 0) {
+        entity.y = canvas.height + entity.height
+      }
     },
     draw() {
       const canvas = this.$refs.canvas
