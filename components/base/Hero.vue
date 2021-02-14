@@ -1,14 +1,15 @@
 <template>
   <div class="hero">
     <img class="jip" src="/jip-body.png" alt="Jip with a cat on his shoulder" />
+    <img ref="head" class="head" src="/jip-head.png" @click="activate" />
     <img
-      ref="head"
-      class="head"
-      src="/jip-head.png"
-      alt="Jip with a cat on his shoulder"
-      @click="activate"
+      ref="cat-head"
+      src="/cat-head.png"
+      class="cat"
+      alt
+      @click="activateCat"
     />
-    <canvas v-if="player" ref="canvas" />
+    <canvas v-if="player || catPlayer" ref="canvas" />
   </div>
 </template>
 
@@ -39,16 +40,24 @@ canvas {
     left: 28px;
     transform: scale(1);
     transition: bottom 200ms, transform 200ms;
+  }
 
-    &.hidden {
-      opacity: 0;
+  .cat {
+    width: 73px;
+    position: absolute;
+    bottom: 26%;
+    left: 148px;
+    transform: scale(1);
+    transition: transform 200ms;
+
+    &:hover {
+      // transform: scale(1.2);
+      // animation: spin 1s linear infinite;
     }
   }
 
-  .head:hover {
-    // bottom: 50%;
-    // transform: scale(2);
-    // animation: spin 1s linear infinite;
+  .hidden {
+    opacity: 0;
   }
 
   &::before {
@@ -82,12 +91,14 @@ canvas {
 
 <script>
 const headOffset = 0.1
+const catOffset = -0.1
 
 export default {
   data() {
     return {
       player: null,
       keys: {},
+      catPlayer: {},
     }
   },
   mounted() {
@@ -118,36 +129,86 @@ export default {
         head.classList.add('hidden')
       })
     },
+    activateCat() {
+      const head = this.$refs['cat-head']
+      const pos = head.getBoundingClientRect()
+      this.catPlayer = {
+        x: pos.x,
+        y: pos.y,
+        width: head.scrollWidth,
+        height: head.scrollHeight,
+        accel: 0.1,
+        maxSpeed: 15,
+        speed: 1,
+        rotation: -Math.PI / 2 - catOffset,
+      }
+
+      requestAnimationFrame(() => {
+        this.update()
+        head.classList.add('hidden')
+      })
+    },
     update() {
       // Update head position
       const player = this.player
+      if (player) {
+        // Check controls
+        if (this.keys.a) {
+          player.rotation -= 0.02
+        }
+        if (this.keys.d) {
+          player.rotation += 0.02
+        }
+        if (this.keys.w) {
+          player.speed += player.accel
+        }
+        if (this.keys.s) {
+          player.speed -= player.accel
+        }
 
-      // Check controls
-      if (this.keys.a || this.keys.arrowleft) {
-        player.rotation -= 0.02
-      }
-      if (this.keys.d || this.keys.arrowright) {
-        player.rotation += 0.02
-      }
-      if (this.keys.w || this.keys.arrowup) {
-        player.speed += player.accel
-      }
-      if (this.keys.s || this.keys.arrowdown) {
-        player.speed -= player.accel
+        if (player.speed > player.maxSpeed) {
+          player.speed = player.maxSpeed
+        } else if (player.speed < -player.maxSpeed) {
+          player.speed = -player.maxSpeed
+        }
+
+        // Add speed
+        const addX = this.player.speed * Math.cos(this.player.rotation)
+        const addY = this.player.speed * Math.sin(this.player.rotation)
+
+        player.x += addX
+        player.y += addY
       }
 
-      if (player.speed > player.maxSpeed) {
-        player.speed = player.maxSpeed
-      } else if (player.speed < -player.maxSpeed) {
-        player.speed = -player.maxSpeed
+      const catPlayer = this.catPlayer
+      if (catPlayer) {
+        // Check controls
+        if (this.keys.arrowleft) {
+          catPlayer.rotation -= 0.02
+        }
+        if (this.keys.arrowright) {
+          catPlayer.rotation += 0.02
+        }
+        if (this.keys.arrowup) {
+          catPlayer.speed += catPlayer.accel
+        }
+        if (this.keys.arrowdown) {
+          catPlayer.speed -= catPlayer.accel
+        }
+
+        if (catPlayer.speed > catPlayer.maxSpeed) {
+          catPlayer.speed = catPlayer.maxSpeed
+        } else if (catPlayer.speed < -catPlayer.maxSpeed) {
+          catPlayer.speed = -catPlayer.maxSpeed
+        }
+
+        // Add speed
+        const addX = this.catPlayer.speed * Math.cos(this.catPlayer.rotation)
+        const addY = this.catPlayer.speed * Math.sin(this.catPlayer.rotation)
+
+        catPlayer.x += addX
+        catPlayer.y += addY
       }
-
-      // Add speed
-      const addX = this.player.speed * Math.cos(this.player.rotation)
-      const addY = this.player.speed * Math.sin(this.player.rotation)
-
-      player.x += addX
-      player.y += addY
 
       this.draw()
 
@@ -155,33 +216,37 @@ export default {
     },
     draw() {
       const canvas = this.$refs.canvas
-      const ctx = canvas.getContext('2d')
       canvas.width = canvas.scrollWidth
       canvas.height = canvas.scrollHeight
 
       // Draw head
       const player = this.player
       const headImg = this.$refs.head
+      if (player) this.drawT(player, headImg, headOffset)
+
+      // Draw cat head
+      const catPlayer = this.catPlayer
+      const catHead = this.$refs['cat-head']
+      if (catPlayer) this.drawT(catPlayer, catHead, catOffset)
+    },
+    drawT(el, img, offset) {
+      const canvas = this.$refs.canvas
+      const ctx = canvas.getContext('2d')
+
       ctx.save()
-      ctx.translate(player.x + player.width / 2, player.y + player.height / 2)
-      ctx.rotate(player.rotation + Math.PI / 2 + headOffset)
-      ctx.drawImage(
-        headImg,
-        -player.width / 2,
-        -player.height / 2,
-        player.width,
-        player.height
-      )
+      ctx.translate(el.x + el.width / 2, el.y + el.height / 2)
+      ctx.rotate(el.rotation + Math.PI / 2 + offset)
+      ctx.drawImage(img, -el.width / 2, -el.height / 2, el.width, el.height)
       ctx.restore()
     },
     keydown(evt) {
-      if (this.player) {
+      if (this.player || this.catPlayer) {
         if (evt.key.includes('Arrow')) evt.preventDefault()
         this.keys[evt.key.toLowerCase()] = true
       }
     },
     keyup(evt) {
-      if (this.player) {
+      if (this.player || this.catPlayer) {
         if (evt.key.includes('Arrow')) evt.preventDefault()
         this.keys[evt.key.toLowerCase()] = false
       }
