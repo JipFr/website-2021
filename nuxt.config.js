@@ -23,6 +23,10 @@ export default {
         name: 'og:site_name',
         content: "Jip's site",
       },
+      {
+        name: 'theme-color',
+        content: '#457461',
+      },
     ],
     link: [
       {
@@ -40,6 +44,13 @@ export default {
         href: '/favicon.ico',
       },
     ],
+  },
+  content: {
+    markdown: {
+      prism: {
+        theme: '~/assets/scss/prism.scss',
+      },
+    },
   },
   css: ['assets/scss/main.scss'],
   components: false,

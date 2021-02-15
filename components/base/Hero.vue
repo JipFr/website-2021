@@ -90,8 +90,8 @@ export default {
   data() {
     return {
       player: null,
+      catPlayer: null,
       keys: {},
-      catPlayer: {},
       running: false,
     }
   },

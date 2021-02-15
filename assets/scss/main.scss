@@ -34,3 +34,36 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+// Content
+.nuxt-content-container {
+  width: 100%;
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  a {
+    color: var(--anchor);
+    text-decoration: none;
+  }
+  p:not(.is-img).limited-width {
+    display: block;
+    max-width: 37rem;
+  }
+  p:not(.is-img) {
+    margin: 20px auto;
+    color: var(--text-secondary);
+  }
+  img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+    border: 1px solid var(--border);
+    background: var(--border);
+    min-height: 100px;
+  }
+  img + img {
+    margin-top: 20px;
+  }
+}

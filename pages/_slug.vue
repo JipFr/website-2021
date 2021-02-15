@@ -18,38 +18,10 @@
   grid-gap: 20px;
 }
 
-// Post content
-.post-content {
-  width: 100%;
-
-  h2 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-  }
-  a {
-    color: var(--anchor);
-    text-decoration: none;
-  }
-  p.is-text,
-  h1 {
-    display: block;
-    margin: 20px auto;
-    max-width: 37rem;
-  }
-  p.is-text {
-    color: var(--text-secondary);
-  }
-  img {
-    width: 100%;
-    border-radius: 6px;
-    display: block;
-    border: 1px solid var(--border);
-    background: var(--border);
-    min-height: 100px;
-  }
-  img + img {
-    margin-top: 20px;
-  }
+h1 {
+  display: block;
+  margin: 20px auto;
+  max-width: 37rem;
 }
 </style>
 
@@ -91,8 +63,10 @@ export default {
       // Add "is-text" class to all paragraphs without an image
       if (this.$el) {
         this.$el.querySelectorAll('p').forEach((p) => {
-          if (!p.querySelector('img')) {
-            p.classList.add('is-text')
+          if (p.querySelector('img')) {
+            p.classList.add('is-img')
+          } else {
+            p.classList.add('limited-width')
           }
         })
       }
