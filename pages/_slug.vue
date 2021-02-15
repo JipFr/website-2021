@@ -35,15 +35,22 @@ export default {
     Container,
     AppSection,
   },
-  async fetch() {
-    let projects = await this.$content('projects').fetch()
+  async asyncData({ $content, params, error }) {
+    let projects = await $content('projects').fetch()
 
     projects = projects.sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     )
+    const currentPost = projects.find((p) => p.slug === params.slug)
 
-    this.projects = projects
-    this.currentPost = projects.find((p) => p.slug === this.$route.params.slug)
+    if (!currentPost) {
+      error('Page not found')
+    }
+
+    return {
+      projects,
+      currentPost,
+    }
   },
   data() {
     return {
@@ -57,6 +64,9 @@ export default {
         this.setParagraphs()
       })
     },
+  },
+  mounted() {
+    this.setParagraphs()
   },
   methods: {
     setParagraphs() {
