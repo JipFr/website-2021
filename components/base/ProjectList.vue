@@ -12,7 +12,7 @@
         <div class="box-inner">
           <div class="core">
             <h3 class="project-title">{{ project.title }}</h3>
-            <p class="date">{{ project.date }}</p>
+            <p class="date">{{ getDate(project.date) }}</p>
             <p class="description">{{ project.description }}</p>
             <p class="tech">
               <tech-tag
@@ -133,6 +133,22 @@ p.tech {
 import Box from '~/components/layout/Box'
 import TechTag from '~/components/base/TechTag'
 
+// Other stuff
+const months = [
+  'jan',
+  'feb',
+  'mar',
+  'apr',
+  'may',
+  'jun',
+  'jul',
+  'aug',
+  'sep',
+  'oct',
+  'nov',
+  'dec',
+]
+
 export default {
   components: {
     Box,
@@ -151,6 +167,17 @@ export default {
     return {
       projects: [],
     }
+  },
+  methods: {
+    getDate(d) {
+      const dateObj = new Date(d)
+
+      const date = dateObj.getDate().toString().padStart(2, '0')
+      const month = months[dateObj.getMonth()]
+      const year = dateObj.getFullYear()
+
+      return `${date} ${month} ${year}`
+    },
   },
 }
 </script>
