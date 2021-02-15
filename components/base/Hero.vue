@@ -26,6 +26,7 @@ canvas {
 
 .hero {
   position: relative;
+  min-height: 360px;
 
   .jip {
     width: 270px;
@@ -53,6 +54,7 @@ canvas {
 
   .hidden {
     opacity: 0;
+    pointer-events: none;
   }
 
   &::before {
@@ -68,10 +70,6 @@ canvas {
     z-index: -1;
     transition: height 200ms;
   }
-
-  // &:hover::before {
-  //   height: 100%;
-  // }
 }
 
 @keyframes spin {
@@ -94,6 +92,7 @@ export default {
       player: null,
       keys: {},
       catPlayer: {},
+      running: false,
     }
   },
   mounted() {
@@ -120,7 +119,7 @@ export default {
       }
 
       requestAnimationFrame(() => {
-        this.update()
+        if (!this.running) this.update()
         head.classList.add('hidden')
       })
     },
@@ -139,11 +138,13 @@ export default {
       }
 
       requestAnimationFrame(() => {
-        this.update()
+        if (!this.running) this.update()
         head.classList.add('hidden')
       })
     },
     update() {
+      if (!this.running) this.running = true
+
       // Update head position
       const player = this.player
       if (player) {

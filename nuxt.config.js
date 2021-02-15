@@ -18,6 +18,11 @@ export default {
         name: 'description',
         content: "Jip Frijlink's website",
       },
+      {
+        hid: 'og:site_name',
+        name: 'og:site_name',
+        content: "Jip's site",
+      },
     ],
     link: [
       {
