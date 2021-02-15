@@ -29,3 +29,5 @@ fields:
   name: tech
   label: Tech
   description: 'Comma separated: tech used in project'
+pages:
+- content/projects/budget.md
