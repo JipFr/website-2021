@@ -4,22 +4,28 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Project name
 - type: textarea
   name: description
-  label: description
+  label: Description
+  description: Short description of project
 - type: text
   name: color
-  label: color
+  label: Color
+  description: Project's main color
 - type: datetime
   name: date
-  label: date
+  label: Date
+  description: Project's release or added date
 - type: file
   name: icon
-  label: icon
+  label: Icon
+  description: URL to the app's icon
 - type: text
   name: icon-background
-  label: icon-background
+  label: Icon's background
+  description: CSS value for `background`
 - type: text
   name: tech
-  label: tech
+  label: Tech
+  description: 'Comma separated: tech used in project'
