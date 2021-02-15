@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/error.md
   label: Error page
-  match: "**/*"
 - type: document
   path: content/about.md
   label: About

@@ -1,0 +1,25 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: color
+  label: color
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: icon
+  label: icon
+- type: text
+  name: icon-background
+  label: icon-background
+- type: text
+  name: tech
+  label: tech
