@@ -82,5 +82,56 @@ export default {
       }
     },
   },
+  head() {
+    // Title
+    const title = this.currentPost?.title
+      ? `${this.currentPost.title} — Jip Frijlink`
+      : undefined
+
+    // Description
+    const description = this.currentPost?.description
+
+    // Meta tags
+    const meta = [
+      {
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: this.currentPost.color,
+      },
+    ]
+
+    if (this.currentPost?.color) {
+      meta.push({
+        hid: 'theme-color',
+        name: 'theme-color',
+        content: this.currentPost.color,
+      })
+    }
+    if (this.currentPost?.title) {
+      meta.push({
+        hid: 'og:title',
+        name: 'og:title',
+        content: title,
+      })
+    }
+    if (description) {
+      meta.push({
+        hid: 'description',
+        name: 'description',
+        content: description,
+      })
+      meta.push({
+        hid: 'og:description',
+        name: 'og:description',
+        content: description,
+      })
+    }
+
+    console.log(this.currentPost)
+    return {
+      meta,
+      title,
+    }
+  },
 }
 </script>

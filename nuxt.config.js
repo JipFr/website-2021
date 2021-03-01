@@ -19,13 +19,24 @@ export default {
         content: "Jip Frijlink's website",
       },
       {
+        hid: 'og:description',
+        name: 'og:description',
+        content: "Jip Frijlink's website",
+      },
+      {
         hid: 'og:site_name',
         name: 'og:site_name',
         content: "Jip's site",
       },
       {
+        hid: 'theme-color',
         name: 'theme-color',
         content: '#457461',
+      },
+      {
+        hid: 'og:image',
+        name: 'og:image',
+        content: 'https://frij.link/icon.png',
       },
     ],
     link: [
