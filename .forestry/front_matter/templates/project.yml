@@ -31,3 +31,4 @@ fields:
   description: 'Comma separated: tech used in project'
 pages:
 - content/projects/budget.md
+- content/projects/pvp-legacy-website.md
