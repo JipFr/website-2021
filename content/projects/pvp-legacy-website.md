@@ -12,6 +12,6 @@ I built PvP Legacy's website! It features their logo, a description of their Min
 
 I found a few designs online to serve as inspiration. They told me which they liked, and we iterated the website's design based on that.
 
-The website is available on [https://pvplegacy.net/](https://pvplegacy.net/ "https://pvplegacy.net/")
+The website is available on [https://pvplegacy.net/](https://pvplegacy.net/)
 
 ![](/uploads/forums-pvplegacy-net_-2.png)![](/uploads/forums-pvplegacy-net_-1.png)
