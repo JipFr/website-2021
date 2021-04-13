@@ -46,6 +46,16 @@
     color: #06b6d4;
     background: rgba(6, 181, 212, 0.15);
   }
+
+  &[data-tech='Sapper'] {
+    color: #169794;
+    background: rgba(22, 151, 149, 0.15);
+  }
+
+  &[data-tech='Svelte'] {
+    color: #ff3e02;
+    background: rgba(255, 62, 2, 0.15);
+  }
 }
 
 @media (prefers-color-scheme: light) {
