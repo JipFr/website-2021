@@ -2,7 +2,7 @@
 title: Pretendo
 description: Pretendo is an open source replacement for Nintendo's servers for both
   the 3DS and Wii U
-color: "#1B1F3B"
+color: "#673DB6"
 date: 2021-05-25T22:00:00Z
 icon: "/uploads/pretendo-2x.png"
 icon-background: "#673DB6"
