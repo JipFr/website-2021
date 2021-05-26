@@ -13,9 +13,8 @@ Pretendo is an open-source project that aims to recreate Nintendo Network for th
 
 Because their services will be both free and open source, they can exist long after the inevitable closure of Nintendo Network.
 
-***
 
-I built the website based on [mrjvs](https://mrjvs.com)'s design for the project. It is available on [https://pretendo.network](https://pretendo.network)
+I built the website based on [mrjvs](https://mrjvs.com)'s design for the project. It is available on https://pretendo.network
 
 ![](/uploads/pretendo-network_-1.png)
 
