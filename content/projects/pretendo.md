@@ -18,6 +18,6 @@ I built the website based on [mrjvs](https://mrjvs.com)'s design for the project
 
 ![](/uploads/pretendo-network_-1.png)
 
-![](https://i.imgur.com/qRNfqNw.png)
+![](https://i.imgur.com/fqzSZqY.png)
 
 ![](/uploads/img_6535.PNG)
