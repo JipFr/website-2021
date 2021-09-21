@@ -16,6 +16,12 @@
 
         <!-- Projects -->
         <div class="sect">
+          <h2>Testimonials</h2>
+          <testimonials />
+        </div>
+
+        <!-- Projects -->
+        <div class="sect">
           <h2>Projects</h2>
           <project-list />
         </div>
@@ -53,6 +59,7 @@ import Container from '~/components/layout/Container'
 import AppSection from '~/components/layout/Section'
 import Hero from '~/components/base/Hero'
 import AboutMe from '~/components/base/AboutMe'
+import Testimonials from '~/components/base/Testimonials'
 import ProjectList from '~/components/base/ProjectList'
 
 export default {
@@ -61,6 +68,7 @@ export default {
     AppSection,
     Hero,
     AboutMe,
+    Testimonials,
     ProjectList,
   },
 }
