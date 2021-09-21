@@ -127,7 +127,6 @@ export default {
       })
     }
 
-    console.log(this.currentPost)
     return {
       meta,
       title,
