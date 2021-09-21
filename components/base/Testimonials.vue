@@ -78,7 +78,7 @@
 
 .testimonial-text {
   padding: 10px 0 10px 10px;
-  border-left: 2px solid black;
+  border-left: 2px solid var(--text);
 }
 .author {
   margin-top: 10px;
