@@ -43,14 +43,12 @@ h2,
 import Container from '~/components/layout/Container'
 import AppSection from '~/components/layout/Section'
 import Hero from '~/components/base/Hero'
-import AboutMe from '~/components/base/AboutMe'
 
 export default {
   components: {
     Container,
     AppSection,
     Hero,
-    AboutMe,
   },
 }
 </script>

@@ -47,23 +47,23 @@ body {
     color: var(--anchor);
     text-decoration: none;
   }
-  p:not(.is-img).limited-width {
+  p:not(.is-img).limited-width,
+  .do-center {
     display: block;
     max-width: 37rem;
   }
-  p:not(.is-img) {
+  p:not(.is-img),
+  .do-center {
     margin: 20px auto;
     color: var(--text-secondary);
   }
-  img {
-    width: 100%;
+  img:not([width]) {
+    max-width: 100%;
     border-radius: 6px;
     display: block;
     border: 1px solid var(--border);
     background: var(--border);
     min-height: 100px;
-  }
-  img + img {
-    margin-top: 20px;
+    margin: 20px auto;
   }
 }
