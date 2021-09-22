@@ -22,6 +22,29 @@
         </div>
       </div>
     </box>
+    <box class="fw">
+      <p class="testimonial-text">
+        It’s always a pleasure working on a project with Jip! His knowledge of
+        scripting and design is fantastic, allowing flexible and streamline
+        development. He brings so much to the table with his ability create
+        something from the most vague of my ideas, while also being extremely
+        open to feedback and learning new things. Highly recommend.
+      </p>
+      <div class="author">
+        <img
+          src="https://yt3.ggpht.com/a/AATXAJzyx-g1k1TLoiDwfrt31PvtaOO1OsbKS8id6Kdk0Q=s100-c-k-c0xffffffff-no-rj-mo"
+          alt="mcpeachpies"
+        />
+        <div>
+          <h3>mcpeachpies</h3>
+          <p>
+            From
+            <nuxt-link to="/mcpeachpies">mcpeachpies' website</nuxt-link> and 1
+            other project
+          </p>
+        </div>
+      </div>
+    </box>
     <box>
       <p class="testimonial-text">
         Jip has met every expectation of mine when creating designs. He is also
