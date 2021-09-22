@@ -34,6 +34,12 @@ a {
 .links > * + * {
   margin-left: 20px;
 }
+
+@media (max-width: 900px) {
+  .links {
+    display: none;
+  }
+}
 </style>
 
 <script>
