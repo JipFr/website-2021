@@ -73,7 +73,7 @@
           <h3>AoElite</h3>
           <p>
             From
-            <nuxt-link to="/designcourse">Minecraft Kit Viewer</nuxt-link> and
+            <nuxt-link to="/kit-viewer">Minecraft Kit Viewer</nuxt-link> and
             <nuxt-link to="/pvp-legacy-website">PvP Legacy</nuxt-link>
           </p>
         </div>
