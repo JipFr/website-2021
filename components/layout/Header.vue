@@ -4,6 +4,11 @@
       <div class="name-wrapper">
         <nuxt-link to="/"><h2>Jip Frijlink</h2></nuxt-link>
       </div>
+      <div class="links">
+        <nuxt-link to="/#about">About</nuxt-link>
+        <nuxt-link to="/#testimonials">Testimonials</nuxt-link>
+        <nuxt-link to="/#projects">Projects</nuxt-link>
+      </div>
     </container>
   </header>
 </template>
@@ -20,6 +25,14 @@ a {
 }
 .name-wrapper {
   display: inline-block;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links > * + * {
+  margin-left: 20px;
 }
 </style>
 

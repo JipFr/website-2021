@@ -10,18 +10,18 @@
 
       <main>
         <!-- About me -->
-        <div class="sect">
+        <div id="about" class="sect">
           <about-me />
         </div>
 
         <!-- Projects -->
-        <div class="sect">
+        <div id="testimonials" class="sect">
           <h2>Testimonials</h2>
           <testimonials />
         </div>
 
         <!-- Projects -->
-        <div class="sect">
+        <div id="projects" class="sect">
           <h2>Projects</h2>
           <project-list />
         </div>
