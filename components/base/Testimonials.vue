@@ -17,7 +17,7 @@
           <h3>Gary Simon</h3>
           <p>
             From <nuxt-link to="/designcourse">DesignCourse</nuxt-link> and
-            <nuxt-link to="/designcourse">DesignCourse part 2</nuxt-link>
+            <nuxt-link to="/designcourse-2">DesignCourse part 2</nuxt-link>
           </p>
         </div>
       </div>
