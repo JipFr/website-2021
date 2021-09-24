@@ -1,8 +1,10 @@
 :root {
   --theme: #457461;
+  --hero-bg: var(--theme);
   --body: #fefefe;
   --text: #444444;
   --text-secondary: #4c4c4c;
+  --text-tertiary: var(--text-secondary);
   --content: #f8f9fa;
   --content-highlight: #f5f7f9;
   --border: #eeeff0;
@@ -13,9 +15,11 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --theme: #8080c0;
+    --hero-bg: var(--content);
     --body: #202328;
     --text: white;
     --text-secondary: #b3b3b3;
+    --text-tertiary: #7e7e7e;
     --content: #1b1b1b;
     --border: #4c4c4c;
   }

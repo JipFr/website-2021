@@ -65,7 +65,7 @@ canvas {
     left: 0;
     width: 100%;
     height: 60%;
-    background: var(--theme);
+    background: var(--hero-bg);
     border-radius: 10px;
     z-index: -1;
     transition: height 200ms;
