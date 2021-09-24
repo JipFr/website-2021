@@ -24,6 +24,32 @@
     </box>
     <box class="fw">
       <p class="testimonial-text">
+        Jip provides an amazing work experience by providing fast, high quality,
+        front end web development. He has been one of the best developers I have
+        worked with. He was able to turn our early concepts into a professional
+        site that I am always proud to show off. I am proud to call Jip the lead
+        front end developer for
+        <a
+          href="https://pretendo.network"
+          target="_blank"
+          rel="noreferer"
+          class="anchor"
+          >https://pretendo.network/</a
+        >
+      </p>
+      <div class="author">
+        <img src="https://github.com/jonbarrow.png" alt="Jonathan Barrow" />
+        <div>
+          <h3>Jonathan Barrow</h3>
+          <p>
+            From
+            <nuxt-link to="/mcpeachpies">Pretendo</nuxt-link>
+          </p>
+        </div>
+      </div>
+    </box>
+    <box class="fw">
+      <p class="testimonial-text">
         It’s always a pleasure working on a project with Jip! His knowledge of
         scripting and design is fantastic, allowing flexible and streamline
         development. He brings so much to the table with his ability create

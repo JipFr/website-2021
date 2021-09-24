@@ -35,6 +35,15 @@ body {
   margin: 0;
 }
 
+.anchor {
+  color: var(--anchor);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 // Content
 .nuxt-content {
   width: 100%;
