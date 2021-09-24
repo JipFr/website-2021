@@ -43,7 +43,7 @@
           <h3>Jonathan Barrow</h3>
           <p>
             From
-            <nuxt-link to="/mcpeachpies">Pretendo</nuxt-link>
+            <nuxt-link to="/pretendo">Pretendo</nuxt-link>
           </p>
         </div>
       </div>
